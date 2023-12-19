@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4echeen | Web Developer</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/ico.ico">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="relative flex justify-center mb-20">
+        <div class="container fixed backdrop-blur-md z-10">
+            <nav class="flex justify-between items-center pt-6">
+                <a href="#"><img src="img/logo.png" alt="" class="w-40"></a>
+                <ul class="flex gap-10 md:hidden">
+                    <li><a href="#" class="font-medium text-lg hover:text-cyan-600 transition-colors lg:text-base">о нас</a></li>
+                    <li><a href="#" class="font-medium text-lg hover:text-cyan-600 transition-colors lg:text-base">проекты</a></li>
+                    <li><a href="#" class="font-medium text-lg hover:text-cyan-600 transition-colors lg:text-base">отзывы</a></li>
+                    <li><a href="#" class="font-medium text-lg hover:text-cyan-600 transition-colors lg:text-base">заказать</a></li>
+                </ul>
+                <ul id="menu" class="hidden absolute left-8 right-8 top-24 bg-lightblack flex-col items-center">
+                    <li><a href="#" class="block py-4">о нас</a></li>
+                    <li><a href="#" class="block py-4">проекты</a></li>
+                    <li><a href="#" class="block py-4">отзывы</a></li>
+                    <li><a href="#" class="block py-4">заказать</a></li>
+                </ul>
+                <button class="burger hidden md:block">
+                    <span class="burger-line top-line"></span>
+                    <span class="burger-line mid-line"></span>
+                    <span class="burger-line bottom-line"></span>
+                </button>
+            </nav>
+        </div>   
+    </header>
+    <main>
+        <div class="container flex pt-24 items-center justify-between">
+            <div class="flex flex-col gap-12">
+                <h2 class="text-7xl font-medium">Чистых <br> Никита</h2>
+                <p class="text-2xl">Frontend Web Developer</p>
+                <div class="flex gap-5 flex-wrap pr-48">
+                    <p class="px-4 py-1 bg-blue-600 rounded-3xl w-auto">UI / UX design</p>
+                    <p class="px-4 py-1 bg-blue-600 rounded-3xl w-auto">QA testing</p>
+                    <p class="px-4 py-1 bg-blue-600 rounded-3xl w-auto">Web development</p>
+                </div>
+            </div>
+            <div class="gradient md:hidden">
+                <img src="./img/cycle.png" class="w-96">
+            </div>    
+        </div>
+    </main>
+    <about>
+        <div class="container mt-20">
+            <div class="">
+                <p>О нас</p>
+                <h2 class="text-5xl pt-5">История развития</h2>
+                <div class="flex pt-10 justify-between">
+                    <div>
+                        <p class="text-2xl mb-3"><u>2021</u></p>
+                        <p>Начал изучать Web разработку</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl mb-3"><u>2022</u></p>
+                        <p>Первый проект. Лендинг для сети кондитерских</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl mb-3"><u>2023</u></p>
+                        <p>Создано более 20 проектов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </about>
+    <script src="./js/script.js"></script>
+</body>
+</html>

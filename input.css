@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        font-family: 'Montserrat', sans-serif;
+        background-color: #1F1F1F;
+        color: white;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1080px]
+    }
+}
+
+.burger {
+    height: 20px;
+    position: relative;
+    width: 30px;
+}
+
+.burger-line {
+    display: flex;
+    width: 30px;
+    height: 2px;
+    background: rgb(8, 145, 178);
+    transition: .3s all ease;
+}
+
+.top-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mid-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.bottom-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.burger.active>.top-line {
+    transform: translateY(8px) rotate(45deg);
+    transition: .3s all ease;
+}
+
+.burger.active>.mid-line {
+    opacity: 0;
+    transition: .3s all ease;
+}
+.burger.active>.bottom-line {
+    transform: translateY(-10px) rotate(-45deg);
+    transition: .3s all ease;
+}
+.gradient{
+    filter: drop-shadow(0 0 50px #efefef);
+}
